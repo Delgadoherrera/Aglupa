@@ -1,0 +1,13 @@
+[
+ {
+    "id": 145,
+  "nombreapellido": "Probando registro",
+  "nombreuser": "Taco molorto",
+  "email": "probando@gmail.com",
+  "fechadenacimiento": "2022-03-30",
+  "avatar": "usuario1657917842849.jpg",
+  "password2": "$2a$10$5TVuIbFiWoh.Z3gk7zS1z.DoAoK2oEefZn5ysFVvRVYvoN64bCbtG",
+  "roleId": 1
+  
+ }
+]

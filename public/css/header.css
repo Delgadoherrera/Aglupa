@@ -1,0 +1,160 @@
+/*-------------------PRODUCTOS DESPLEGABLE-------------*/
+.productos:hover .sub-menu{
+    display: block;
+    text-align: start;
+}
+.sub-menu{
+    color: #3e3e3e;
+    padding: 10px;
+    display: none;
+    position: relative;
+    right: 50px;
+}
+.sub-menu:hover{
+    color: #53535376;
+}
+/*----------------*/
+header {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    background-color: white;
+    top: 0px;
+    left: 0%;
+    position: fixed;
+    z-index: 1;
+    transition: 0.8s;
+    box-shadow: 1px 1px 1px #3e3e3e48;
+}
+.div-padre{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+.container-logo{
+    justify-content: center;
+}
+.img-logo{
+    width: 100%;
+}
+.container-carrito{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+}
+a {
+    text-decoration: none;
+}
+.container-header{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+.ul{
+    display: flex;
+    justify-content: center;
+}
+.hijos-ul{
+    padding: 0px;
+    margin-top: 8px;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+.a-header{
+    color: #3e3e3e;
+}
+.a-header:hover{
+    color: #53535376;
+    text-decoration: none;
+}
+.carrito:hover{
+    color: #bc9c84;
+}
+#formularioBusqueda{
+    border:1px solid rgb(205, 205, 205);
+  }
+  #boton{
+    border:1px solid rgb(205, 205, 205);
+  }
+/*------------------------------MEDIA 361PX----------------------------*/
+@media (min-width:361px){
+    main{
+        margin-top:35%;
+    }
+    .container-logo{
+        width: 70%;
+        height: auto;
+        padding-left:30%;
+    }
+    .container-carrito{
+        height: auto;
+        width: 25%;
+    }
+    .carrito{
+        color:#535353;
+        font-size: 15px;
+        margin: 0px;
+    }
+    .a-header{
+        font-size: 10px;
+        
+    }
+    .productos{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    #formularioBusqueda{
+        font-size:40%;
+        margin-top: 15px;
+        margin-left: 1px;
+        padding: 3px;
+    }
+    #boton{
+        font-size:40%;
+    }
+}
+/*--------------------------- MEDIA 769PX--------------------------------*/
+@media (min-width: 769px){
+    main{
+        margin-top:12%;
+    }
+    .container-logo{
+        width: 55%;
+        height: auto;
+        text-align:end ;
+    }
+    .img-logo{
+        width: 52%;
+        height: auto;
+    }
+    .container-carrito{
+        height: auto;
+        width: 40%;
+    }
+    .carrito{
+        font-size: 20px;
+    }
+    .a-header{
+        font-size: 16px;
+    }
+    .productos{
+        font-size: 16px;
+    }
+    #formularioBusqueda{
+        font-size:90%;
+        margin-top: 15px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    #boton{
+        font-size:90%;
+    }
+}

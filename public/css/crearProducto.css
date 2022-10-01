@@ -1,0 +1,25 @@
+.h2-crearProducto{
+    font-family: 'Montserrat', sans-serif;  
+    color:#434343;
+    text-align: center;
+}
+.container-crearProducto{
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.div-info-crear{
+    width: 100%;
+}
+/*------------MEDIA QUERYS--------------------*/
+@media (min-width: 375px){
+    .h2-crearProducto{
+        font-size: 35px;
+        padding: 10px;
+    }
+}
+@media (min-width: 720px){
+    .h2-crearProducto   {
+        font-size: 60px;
+    }
+}

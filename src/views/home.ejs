@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+
+    <body>
+
+        <%- include('partials/headerNavbar') %>
+            <main>
+                <div class="contenedor-imagen-principal">
+                    <img class="imagen-principal" src="/img/nueva coleccion invierno 2022.webp" alt="img-banner">
+                    <img class="img-mobile" src="/img/img-mobile.jpg">
+                </div>
+                <h2 class="h2-home">Ofertas destacadas</h2>
+                <section class="seccion-articulos">
+                    <% for( let i=0; i < productos.length; i++ ) { %>
+
+                        <article class="articulo-container">
+                            <div class="div-img-home">
+                                <a class="banner_home" href="/productos/detail/<%= productos[i].id %>">
+                                    <img class="imagen-producto" src="/img/<%=productos[i].image %>"> 
+                                </a>
+                            </div>
+                            <div class="div-descripcion">
+                                <p class="nombre-articulo">
+                                    <%=productos[i].name %> %<%=productos[i].discount %>
+                                </p>
+                                <p class="precio">
+                                    $<%=productos[i].price %>
+                                </p>
+                            </div>
+                        </article>
+                        <% } %>
+
+                </section>
+            </main>
+
+            <%- include('partials/footer') %>
+    </body>
+
+</html>
